@@ -1,0 +1,117 @@
+/* style.css */
+
+/* Import Anton font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Basic styles for the entire page */
+body {
+  font-family: 'Anton', sans-serif;
+  margin: 0;
+  background-color: #cccccc;
+  color: #0c0d3b;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: #0c0d3b;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+nav a {  /* Added styles for navigation links */
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem; /* Added padding to links */
+}
+
+/* Main content styles */
+main {
+  padding: 1rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem; /* Added spacing */
+}
+
+p {
+  margin-bottom: 1rem; /* Added spacing */
+}
+
+/* Footer styles */
+footer {
+  background-color: #0c0d3b;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Image styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Center images horizontally */
+  margin: 0 auto;
+  margin-bottom: 1rem; /* Added spacing */
+}
+
+/* Hero section styles */.hero-container {
+  position: relative; /* Added to position the <h1> */
+}.hero-container img {
+  width: 100%;
+  height: auto;
+}.hero-container h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 0.5rem 1rem;
+  font-size: 15vw; /* Adjusted font size */
+  z-index: 1;
+  border-radius: 10px;
+  color: #ffffff;
+  text-shadow: 5px 5px 10px #0c0d3b; /* Adjusted text shadow */
+}
+
+main p:nth-child(3) { /* Targets the tagline */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main button { /* Targets the CTA button */
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  background-color: #0c0d3b;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sticky footer styles */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
